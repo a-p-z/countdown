@@ -52,6 +52,11 @@ void string_to_symbols(char string[], const bool (*symbols[])[SYMBOL_H][SYMBOL_W
 			case ':':
 				symbol = &COLON;
 				break;
+
+			case '-':
+				symbol = &MINUS;
+				break;
+
 			case '0':
 			case '1':
 			case '2':
