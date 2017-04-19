@@ -38,7 +38,7 @@ int string_to_seconds(char string[N_DIGITS])
 
 void seconds_to_string(long seconds, char string[N_DIGITS])
 {
-	string[0] = seconds >= 0 ? ' ' : '-';
+	string[0] = ' ';
 	seconds = labs(seconds);
 	string[1] = seconds / 3600 % 10 + '0';
 	string[2] = ':';
