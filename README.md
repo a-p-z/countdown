@@ -10,6 +10,7 @@ $ gcc -Wall -ansi -pedantic countdown.c symbols.c -o countdown -lcurses
 1. run ```$ ./countdown``` 
 2. set the time (e.g. 90m)
 3. press ENTER to start
+4. use P and Q for pause or quit
 
 ![settings](/images/settings.png?raw=true "Settings")   
 ![countdown](/images/countdown.png?raw=true "Countdown")
