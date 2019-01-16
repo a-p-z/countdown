@@ -23,6 +23,7 @@ void push_digit(char digits[N_DIGITS], int i);
 void countdown_read_digits(char string[N_DIGITS]);
 void countdown_start(long seconds);
 void set_color_by_remaining_time(long time);
+void beep_on_timeout(long time);
 void set_color(short seconds);
 void print_digits(char digits[N_DIGITS]);
 void print_seconds(long time);

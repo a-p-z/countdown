@@ -131,6 +131,7 @@ void countdown_start(long seconds)
 
 		clear();
 		set_color_by_remaining_time(remaining_time);
+		beep_on_timeout(remaining_time);
 		print_digits(digits);
 		print_seconds(remaining_time);
 		refresh();
@@ -148,6 +149,14 @@ void set_color_by_remaining_time(const long time)
 	else
 	{
 		set_color(RED);
+	}
+}
+
+void beep_on_timeout(const long time)
+{
+	if (-10 <= time && time <= 0)
+	{
+		beep();
 	}
 }
 
